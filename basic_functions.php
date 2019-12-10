@@ -208,7 +208,7 @@ function composeQuestionText($iQuestion, $question, $currentOptions){
 
 
 function getPageHeader($serverName){
-	if ( $serverName == WORDPRESS_SITE ){
+	if ( strpos($serverName, WORDPRESS_SITE) !== false ){
 		get_header();
 		$css_link = '/wp-content/themes/TheFox/english_test.css';
 	} else {
@@ -220,7 +220,7 @@ function getPageHeader($serverName){
 
 
 function getPageFooter($serverName){
-	if ( $serverName == WORDPRESS_SITE ){
+	if ( strpos($serverName, WORDPRESS_SITE) !== false ){
 		get_footer();
 	} else {
 		get_standalone_footer();
