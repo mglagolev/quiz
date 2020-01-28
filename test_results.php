@@ -21,6 +21,9 @@ if ($user['src'] != "") {
 	echo "<p>" . get_foreword($_SERVER['SERVER_NAME'], $_ENV['LEVEL_DATA_FILE']) . $levelNameDesc['levelName'] . "</p>";
 	echo "<p>" . $levelNameDesc['levelDesc'] . "</p>";
 	echo "<p>" . get_results_text($_SERVER['SERVER_NAME'], $_ENV['LEVEL_DATA_FILE']) . "</p>";
+	if(array_key_exists('SHOW_ANSWERS', $_ENV) && ($_ENV['SHOW_ANSWERS'] == "True")){
+		echo '<p>' . urldecode($_POST['answers']) . '</p>' . "\n";
+	}
 } else { 
 	echo "<div style=\"margin:0 auto; display:table\">";
 	echo "<form class=\"buttonForm\" action=\"" . $_ENV['UNREGISTERED_ACTION'] . "\" method=\"post\" id=\"quiz\">";

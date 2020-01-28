@@ -65,6 +65,9 @@ if ( $user['src'] != "" ) {
 	{
 		echo '<input type="hidden" name="' . $key . '" value="' . $value . '">' . "\n";
 	}
+	if(array_key_exists('SHOW_ANSWERS', $_ENV) && ($_ENV['SHOW_ANSWERS'] == "True")){
+		echo '<input type="hidden" name="answers" value="' . urlencode($emailText) . '">' . "\n";
+	}
 	echo '<input class="submit_button" type="submit" value="' . $formButtonText . '" />';
 	echo '</form>
 	<script type="text/javascript">
