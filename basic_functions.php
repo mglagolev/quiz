@@ -213,7 +213,7 @@ function getPageHeader($serverName){
 		$css_link = '/wp-content/themes/TheFox/english_test.css';
 	} else {
 		get_standalone_header();
-		$css_link = '//test.teacherpreneurs.club/outcomes_test.css';
+		$css_link = './outcomes_test.css';
 	}
 	echo("<link rel=\"stylesheet\" type=\"text/css\" href=\"" . $css_link . "\">\n");
 }

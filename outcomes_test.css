@@ -1,0 +1,74 @@
+.option {
+	font-size:1.2em;
+	color:#646464;
+}
+.question {
+	font-size:1.5em;
+	color:#323232;
+}
+.questions {
+	padding:0em;
+}
+.buttonForm {
+	padding:2em;
+}	
+.numAnswers {
+	text-align: center;
+}
+.participantInfo{
+}
+.paddingDiv {
+	padding: 1em 2em;
+	max-width:600px;
+	margin:0 auto;
+}
+.paddingResults {
+	padding: 1em 2em;
+	max-width:900px;
+	margin:0 auto;
+}
+.buttonPadding {
+	padding: 0em;
+}
+.credentials {
+	font-size:1.2em;
+	color:#646464;
+}
+.results_button {
+	background:#f8a300;
+	/*background:#f8a300;*/
+}
+
+.submit_button {
+	background:#f8a300;
+	text-align:center;
+	width:100%;
+}
+.payButton {
+	background:#ff0000;
+	padding:2em;
+	font-weight:bold;
+	color:#ffffff;
+	}
+.introduction {
+	font-size:1.5em;
+	color:#646464;
+	line-height:120%;
+}
+.results {
+	font-size:1.5em;
+	color:#646464;
+	line-height:120%;
+}
+.req_field {
+	color:#FF0000;
+}
+.p-e-header {
+	background:#000000;
+	padding:0.5em;
+}
+.p-e-footer {
+	background:#000000;
+	padding:0.5em;
+	line-height:120%
+}
